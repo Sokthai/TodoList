@@ -1,9 +1,9 @@
 @if (count($errors) > 0)
-    <div
+    <div class="container col-md-8"
             style="
-                  position: absolute;
+                  position: sticky;
                   z-index: 10;
-                  float: right;
+                  float: left;
                   top: 60px;
                   left: 20px;
                   color: red;
@@ -18,11 +18,11 @@
 @endif
 
 @if (session('message'))
-    <div class="row col-md-12"
+    <div class="container col-md-8"
          style="
-                  position: absolute;
+                  position: sticky;
                   z-index: 10;
-                  float: right;
+                  float: left;
                   top: 60px;
                   left: 20px;
                   "
