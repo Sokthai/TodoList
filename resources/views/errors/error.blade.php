@@ -18,7 +18,7 @@
 @endif
 
 @if (session('message'))
-    <div class="container col-md-6"
+    <div class="container col-md-8"
          style="
                   position: sticky;
                   z-index: 10;

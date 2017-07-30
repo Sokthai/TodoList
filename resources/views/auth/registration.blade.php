@@ -12,6 +12,8 @@
             @include('master.resetQuestions')
 
             <button name="submit" class="btn btn-primary btn-block">Register</button>
+            <br/>
         </form>
     </div>
+
 @endsection
