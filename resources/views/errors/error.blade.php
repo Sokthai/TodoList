@@ -20,7 +20,7 @@
 @if (session('message'))
     <div class="row col-md-12"
          style="
-                  position: rela;
+                  position: absolute;
                   z-index: 10;
                   float: right;
                   top: 60px;

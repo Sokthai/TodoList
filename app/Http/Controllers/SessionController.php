@@ -61,7 +61,7 @@ class SessionController extends Controller
             return back()->withErrors(['message' => 'Sorry, the email you provided in not in the system, please try again']);
         }
 
-        $homePath = "http://127.0.0.1:8000";
+        $homePath = "http://108.61.84.32";
         $token = str_random(80);
         $link = $homePath. '/reset/' . $token;
         Mail::to($user)->send(new ResetPassword($link));
@@ -136,7 +136,7 @@ class SessionController extends Controller
         $token->save();
 
         session()->flash('message', 'Your password has been changed successfully');
-//        $homePath = "http://127.0.0.1:8000/";
+//        $homePath = ""http://108.61.84.32";
         return redirect()->route('login');
 //        return redirect($homePath)->withErrors(['message' => "successfully change password"]);
     }
