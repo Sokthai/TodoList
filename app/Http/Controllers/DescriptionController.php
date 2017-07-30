@@ -30,7 +30,7 @@ class DescriptionController extends Controller
 
         $newDesc->todo->closing = $closing;
         $newDesc->todo->complete = $complete;
-        $newDesc->todo->path = $path;
+        if ($path) $newDesc->todo->path = $path;
         $newDesc->todo->favorite = $favorite;
         $newDesc->todo->save();
 
