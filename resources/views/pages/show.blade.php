@@ -41,12 +41,13 @@
                     <td>{{ucfirst($desc->comment)}}</td>
                 @endif
                 <td>
-                    {{$desc->created_at->hour % 12}} :
-                    {{$desc->created_at->minute}}
+
                     @if($desc->created_at->hour > 12)
-                         PM
+                        {{$desc->created_at->hour % 12}} :
+                        {{$desc->created_at->minute}} PM
                     @else
-                        AM
+                        {{$desc->created_at->hour}} :
+                        {{$desc->created_at->minute}} AM
                     @endif
                 </td>
                 <td>{{$desc->created_at->toFormattedDateString()}}</td>
