@@ -45,9 +45,12 @@
                     @if($desc->created_at->hour > 12)
                         {{$desc->created_at->hour % 12}} :
                         {{$desc->created_at->minute}} PM
+                    @elseif($desc->created_at->hour == 0)
+                        12 :
+                        {{$desc->created_at->minute}} AM
                     @else
                         {{$desc->created_at->hour}} :
-                        {{$desc->created_at->minute}} AM
+                        {{$desc->created_at->minute}} PM
                     @endif
                 </td>
                 <td>{{$desc->created_at->toFormattedDateString()}}</td>
