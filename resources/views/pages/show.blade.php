@@ -30,16 +30,13 @@
                 @if (strlen($desc->description) > 50)
                     <td>
                         <textarea style="background-color: transparent" readonly class="form-control">{{ucfirst($desc->description)}}</textarea>
-
                     </td>
                 @else
                     <td>{{ucfirst($desc->description)}}</td>
                 @endif
 
                 @if (strlen($desc->comment) > 50)
-                    <td><textarea style="background-color: transparent" readonly class="form-control long-text">
-                        {{ucfirst($desc->comment)}}
-                    </textarea></td>
+                    <td><textarea style="background-color: transparent" readonly class="form-control long-text">{{ucfirst($desc->comment)}}</textarea></td>
                 @else
                     <td>{{ucfirst($desc->comment)}}</td>
                 @endif
