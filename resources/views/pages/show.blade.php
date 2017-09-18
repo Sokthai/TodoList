@@ -19,8 +19,8 @@
             <td width="2%">No</td>
             <td width="45%">Description</td>
             <td width="30%">Comment</td>
-            <td width="10%">Time</td>
-            <td width="13%">Date</td>
+            <td width="11%">Time</td>
+            <td width="12%">Date</td>
         </tr>
         </thead>
 
@@ -43,17 +43,42 @@
                 <td>
 
                     @if($desc->created_at->hour > 12)
-                        {{$desc->created_at->hour % 12}} :
-                        {{$desc->created_at->minute}} PM
+                        @if(strlen($desc->created_at->hour % 12) == 1)
+                            0{{$desc->created_at->hour % 12}}
+                        @else
+                            {{$desc->created_at->hour % 12}}
+                        @endif
+                        :
+                        @if($desc->created_at->minute < 10)
+                                 0{{$desc->created_at->minute}} PM
+                        @else
+                                {{$desc->created_at->minute}} PM
+                        @endif
+
                     @elseif ($desc->created_at->hour == 12)
                         12
-                        {{$desc->created_at->minute}}  PM
+                        :
+                        @if($desc->created_at->minute < 10)
+                            0{{$desc->created_at->minute}} PM
+                        @else
+                            {{$desc->created_at->minute}} PM
+                        @endif
                     @elseif($desc->created_at->hour == 0)
                         12 :
-                        {{$desc->created_at->minute}}  AM
+                        :
+                        @if($desc->created_at->minute < 10)
+                            0{{$desc->created_at->minute}} AM
+                        @else
+                            {{$desc->created_at->minute}} AM
+                        @endif
                     @else
-                        {{$desc->created_at->hour}} :
-                        {{$desc->created_at->minute}} AM
+                        0{{$desc->created_at->hour}} :
+                        :
+                        @if($desc->created_at->minute < 10)
+                            0{{$desc->created_at->minute}} AM
+                        @else
+                            {{$desc->created_at->minute}} AM
+                        @endif
                     @endif
                 </td>
                 <td >{{$desc->created_at->toFormattedDateString()}}</td>
