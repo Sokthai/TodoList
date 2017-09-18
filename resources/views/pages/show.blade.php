@@ -18,13 +18,13 @@
         <tr >
             <td width="2%">No</td>
             <td width="45%">Description</td>
-            <td width="32%">Comment</td>
+            <td width="30%">Comment</td>
             <td width="10%">Time</td>
-            <td width="11%">Date</td>
+            <td width="13%">Date</td>
         </tr>
         </thead>
 
-        @foreach($todo->description as $index => $desc)
+        @foreach($todo->description()->orderBy('created_at', 'desc')->get() as $index => $desc)
             <tr>
                 <td>{{$index + 1}}</td>
                 @if (strlen($desc->description) > 50)
@@ -42,19 +42,19 @@
                 @endif
                 <td>
 
-                    @if($desc->created_at->hour > 12)
+                    @if($desc->created_at->hour >= 12)
                         {{$desc->created_at->hour % 12}} :
                         {{$desc->created_at->minute}} PM
                     @elseif($desc->created_at->hour == 0)
                         12 :
-                        {{$desc->created_at->minute}} AM
+                        {{$desc->created_at->minute}}  AM
                     @else
                         {{$desc->created_at->hour}} :
-                        {{$desc->created_at->minute}} PM
+                        {{$desc->created_at->minute}} AM
                     @endif
                 </td>
-                <td>{{$desc->created_at->toFormattedDateString()}}</td>
- 
+                <td >{{$desc->created_at->toFormattedDateString()}}</td>
+
             </tr>
         @endforeach
     </table>
