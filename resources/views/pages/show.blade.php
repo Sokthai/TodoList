@@ -42,9 +42,12 @@
                 @endif
                 <td>
 
-                    @if($desc->created_at->hour >= 12)
+                    @if($desc->created_at->hour > 12)
                         {{$desc->created_at->hour % 12}} :
                         {{$desc->created_at->minute}} PM
+                    @elseif ($desc->created_at->hour == 12)
+                        12
+                        {{$desc->created_at->minute}}  PM
                     @elseif($desc->created_at->hour == 0)
                         12 :
                         {{$desc->created_at->minute}}  AM
