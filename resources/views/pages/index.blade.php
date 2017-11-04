@@ -34,11 +34,12 @@
                 <tr class="success">
                     <td width="5">{{$index + 1}}</td>
                     <td>
-                        <h3><a href="/{{$todo->name}}" class="blog-post-title {{$todo->closing == 1? "statusComplete" : "statusInComplete"}}">{{title_case($todo->name)}}</a>
-                            {{($todo->favorite === 1)? " &#11088;" : ""}}</h3>
+                        <span><h3><a href="/{{$todo->name}}" class="blog-post-title {{$todo->closing == 1? "statusComplete" : "statusInComplete"}}">{{title_case($todo->name)}}</a>
+                            <b style="font-size: 50%; color: gray">Last Edit: {{$todo->description->last()->created_at->diffForHumans(null, true)}}</b>
+                                {{($todo->favorite === 1)? " &#11088;" : ""}}</h3></span>
                         <h6 class="blog-post-meta">
                             &nbsp;	<span style="color: #8a6d3b">{{ucfirst($todo->type)}}</span>
-                            {{$todo->created_at->diffForHumans(null)}}
+                            : created {{$todo->created_at->diffForHumans(null)}}
                         </h6>
 
                             <h5 class="blog-header">

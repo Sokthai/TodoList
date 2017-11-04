@@ -17,5 +17,4 @@ class Description extends Model
         return $this->pluck('description')->last();
     }
 
-
 }

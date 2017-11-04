@@ -9,7 +9,6 @@ class Todo extends Model
     protected $table = "todo";
     protected $fillable = [ 'type', 'name', 'description', 'complete', 'user_id', 'comment', 'closing' , 'path'];
 
-
     public function description(){
         return $this->hasMany(Description::class);
     }
