@@ -20,20 +20,20 @@
                     </select><br/>
 
                     <label for="newType">New type: </label>
-                    <input type="text" name="newType" id="newType" class="form-control createForm"  autofocus/> <br/>
+                    <input type="text" name="newType" id="newType" class="form-control createForm"  placeholder="max: 30" autofocus/> <br/>
 
                     <label for="path">Project Path: </label>
                     <input type="text" name="path" id="path" class="form-control createForm" /><br/>
 
                     <label for="projectName">Project Name: </label>
-                    <input type="text" name="name" id="projectName" class="form-control createForm"/><br/>
+                    <input type="text" name="name" id="projectName" class="form-control createForm" placeholder="15 - 50 chars"/><br/>
 
                     <label for="desc">Description: </label>
-                    <textarea rows="5" name="desc" id="desc" class="form-control createForm"></textarea><br/>
+                    <textarea rows="5" name="desc" id="desc" class="form-control createForm" placeholder="max: 128"></textarea><br/>
 
 
                     <label for="comment">Comment:</label>
-                    <textarea rows="5" name="comment" id="comment" class="form-control createForm"></textarea>
+                    <textarea rows="5" name="comment" id="comment" class="form-control createForm" placeholder="max: 1024"></textarea>
                     <div style="margin-top: 1em">
                         <a href="#" onClick="clearInput()" class="btn btn-default btnCancel">Clear</a>
                         <button class="btn btn-primary btnRight" onclick="selectType()" >Submit</button>
