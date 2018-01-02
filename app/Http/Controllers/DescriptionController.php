@@ -50,10 +50,10 @@ class DescriptionController extends Controller
                     $path = public_path('images/' . $fileName); //the location is located in public/images
                     Image::make($file)->resize(1200, 800)->save($path);
 
-                    Picture::create([
-                       'desc_id' => $newDesc->id,
-                       'image' => $fileName
-                    ]);
+//                    Picture::create([
+//                       'desc_id' => $newDesc->id,
+//                       'image' => $fileName
+//                    ]);
                 }
             }
 
