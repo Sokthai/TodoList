@@ -21,6 +21,7 @@ Route::get('/logout', 'SessionController@destroy');
 Route::get('/create', 'TodoController@create');
 Route::post('/store', 'TodoController@store');
 Route::post('/description/{id}', 'DescriptionController@store');
+Route::get('/pictures/{id}', 'DescriptionController@showPicture');
 Route::get('/confirm/{arrId}', 'TodoController@confirm');
 Route::delete('destroy/{IDs}', 'TodoController@destroy');
 

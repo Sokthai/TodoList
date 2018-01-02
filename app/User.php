@@ -32,6 +32,10 @@ class User extends Authenticatable
         return $this->hasMany(Todo::class, 'user_id');
     }
 
+    public function image(){
+        return $this->hasMany(Picture::class);
+    }
+
     public function reset(){
         return $this->hasOne(Reset::class, 'user_id');
     }

@@ -27,13 +27,20 @@
         @foreach($todo->description()->orderBy('created_at', 'desc')->get() as $index => $desc)
             <tr>
                 <td>{{$index + 1}}</td>
-                @if (strlen($desc->description) > 50)
-                    <td>
-                        <textarea style="background-color: transparent" readonly class="form-control">{{ucfirst($desc->description)}}</textarea>
-                    </td>
-                @else
-                    <td>{{ucfirst($desc->description)}}</td>
-                @endif
+                <div class="clearfix">
+                    @if (strlen($desc->description) > 50)
+                        <td><textarea style="background-color: transparent" readonly class="form-control">{{ucfirst($desc->description)}}</textarea></td>
+                    @else
+                        <td>
+                            {{ucfirst($desc->description)}}
+
+                            @if($desc->image->count() > 0)
+                                <a href="/pictures/{{$desc->image->first()->desc_id}}">&#9752;</a>
+                            @endif
+
+                        </td>
+                    @endif
+                </div>
 
                 @if (strlen($desc->comment) > 50)
                     <td><textarea style="background-color: transparent" readonly class="form-control long-text">{{ucfirst($desc->comment)}}</textarea></td>

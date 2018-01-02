@@ -13,6 +13,10 @@ class Todo extends Model
         return $this->hasMany(Description::class);
     }
 
+    public function image(){
+        return $this->hasMany(Picture::class);
+    }
+
     public function user(){
         return $this->belongsTo(User::class, 'user_id');
     }

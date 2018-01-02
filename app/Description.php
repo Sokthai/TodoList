@@ -13,6 +13,11 @@ class Description extends Model
         return $this->belongsTo(Todo::class);
     }
 
+    public function image(){ //refer by "image" name in tinker
+        return $this->hasMany(Picture::class, 'desc_id');
+    }
+
+
     public function getLastDescription(){
         return $this->pluck('description')->last();
     }
