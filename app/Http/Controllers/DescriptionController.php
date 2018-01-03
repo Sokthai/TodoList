@@ -42,22 +42,21 @@ class DescriptionController extends Controller
 
 
         //using Image library: read intervention image website or book search for "intervention image"
-        if (!empty($files)){
-            if (is_array($files)) {
-                foreach ($files as $file) {
-//                    //this will save in public folder using Image library (Must install library before use. go to it website for instruction or our book search for "intervention image")
-                    $fileName = time() . $file->getClientOriginalName();
-                    $path = public_path('images/' . $fileName); //the location is located in public/images
-//                    Image::make($file)->resize(1200, 800)->save($path);
-
-                    Picture::create([
-                       'desc_id' => $newDesc->id,
-                       'image' => $fileName
-                    ]);
-                }
-            }
-
-        }
+//        if (!empty($files)){
+//            if (is_array($files)) {
+//                foreach ($files as $file) {
+////                    //this will save in public folder using Image library (Must install library before use. go to it website for instruction or our book search for "intervention image")
+//                    $fileName = time() . $file->getClientOriginalName();
+//                    $path = public_path('images/' . $fileName); //the location is located in public/images
+//                    //Image::make($file)->resize(1200, 800)->save($path);
+//
+////                    Picture::create([
+////                       'desc_id' => $newDesc->id,
+////                       'image' => $fileName
+////                    ]);
+//                }
+//            }
+//        }
 
         session(['success' => 'progress added']);
         return back();
