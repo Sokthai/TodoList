@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="644a4185-8493-4705-9611-20a0aef010a5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/framework/sessions/myrMoqoTZuPNR0DsCm3NLNThgvvkX1pnGRv0fYO0" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/DescriptionController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/DescriptionController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/logs/laravel.log" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -159,8 +156,8 @@
               <file leaf-file-name="DescriptionController.php" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DescriptionController.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="137">
-                      <caret line="52" column="28" lean-forward="true" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+                    <state relative-caret-position="129">
+                      <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
                       <folding>
                         <element signature="e#40#68#0#PHP" expanded="true" />
                       </folding>
@@ -842,12 +839,12 @@
       <workItem from="1514772418264" duration="388000" />
       <workItem from="1514833073700" duration="30916000" />
       <workItem from="1514894915320" duration="26000" />
-      <workItem from="1514987345876" duration="2482000" />
+      <workItem from="1514987345876" duration="2997000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214119000" />
+    <option name="totallyTimeSpent" value="214634000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1296,8 +1293,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DescriptionController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="52" column="28" lean-forward="true" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+        <state relative-caret-position="129">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>
