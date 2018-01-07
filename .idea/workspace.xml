@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="644a4185-8493-4705-9611-20a0aef010a5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/DescriptionController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/DescriptionController.php" />
-    </list>
+    <list default="true" id="644a4185-8493-4705-9611-20a0aef010a5" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -499,8 +497,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
+    <option name="x" value="62" />
+    <option name="y" value="237" />
     <option name="width" value="1360" />
-    <option name="height" value="768" />
+    <option name="height" value="699" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -695,7 +695,6 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
-    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -839,12 +838,12 @@
       <workItem from="1514772418264" duration="388000" />
       <workItem from="1514833073700" duration="30916000" />
       <workItem from="1514894915320" duration="26000" />
-      <workItem from="1514987345876" duration="2997000" />
+      <workItem from="1514987345876" duration="3086000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214634000" />
+    <option name="totallyTimeSpent" value="214723000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -856,7 +855,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1360" height="768" extended-state="0" />
+    <frame x="62" y="237" width="1360" height="699" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2336874" sideWeight="0.49426934" order="0" side_tool="false" content_ui="combo" />
